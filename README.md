@@ -29,8 +29,8 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 
 2. **Clone** this repository  
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/cgeconomou/symbio.git
+   cd symbio
 
 3. **Install dependencies** 
    ```bash
