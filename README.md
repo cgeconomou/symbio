@@ -52,7 +52,12 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 
 5. **🚀 Running the App** 
    ```bash
-   npm start
+   node app.js
+   
+6. **🛑 Terminate the App**
+   While the app is running in the terminal, press:
+   ```bash
+   Ctrl + C
 
 6. **🔗 API Endpoints**  
    - `GET /`  
