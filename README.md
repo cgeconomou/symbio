@@ -62,7 +62,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 6. **🔗 API Endpoints**  
    - `GET /`  
      📄 Renders the network view.  
-   - `GET /config`  
+   - `GET http://localhost:3000/config`  
      🔧 Retrieves the current graph configuration:  
      ```json
      {
@@ -76,7 +76,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
        "showGender": true
      }
      ```
-   - `POST /config`  
+   - `POST http://localhost:3000/config`  
      ✏️ Updates the configuration. Send JSON configuration in request body:  
      ```json
      {
