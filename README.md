@@ -24,16 +24,19 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 
 ## 🛠️ Installation & Setup
 
-1. **Clone** this repository  
+1. **Open** your terminal  
+   Navigate to the folder where you want the project to live.
+
+2. **Clone** this repository  
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
 
-2. **Install dependencies** 
+3. **Install dependencies** 
    ```bash
    npm install
 
-3. Verify data is present at `public/data/data_network.json` in this format:
+4. Verify data is present at `public/data/data_network.json` in this format:
 
    ```json
    {
@@ -47,11 +50,11 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
      ]
    }
 
-4. **🚀 Running the App** 
+5. **🚀 Running the App** 
    ```bash
    npm start
 
-5. **🔗 API Endpoints**  
+6. **🔗 API Endpoints**  
    - `GET /`  
      📄 Renders the network view.  
    - `GET /config`  
@@ -93,7 +96,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
        ```json
        {"success": false, "message": "Invalid config."}
        ```
-    6. ## 📊 Configuration Options
+    7. ## 📊 Configuration Options
 
     | Option         | Type    | Description                        |
     |----------------|---------|------------------------------------|
@@ -106,7 +109,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
     | `showBirthplace`| boolean | Highlight birthplace connections  |
     | `showGender`   | boolean | Color nodes by gender              |
 
-    7. ## Customization
+    8. ## Customization
 
     - Edit `public/js/networkGraph.js` to adjust mapping logic or add new features.
     - Modify the configuration object to change default styles and behaviors.
