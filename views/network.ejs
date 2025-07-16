@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Symbiotik Network Graph Prototype</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link
+    href="https://unpkg.com/vis-network/styles/vis-network.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    #my_dataviz {
+      width: 800px;
+      height: 800px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Symbiotik Network Graph Prototype</h1>
+  <div
+    id="my_dataviz"
+    data-config='<%= JSON.stringify(config) %>'
+  ></div>
+
+  <!-- vis-network -->
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <!-- your graph code -->
+  <script src="/js/networkGraph.js"></script>
+
+  <!-- re-style on config changes -->
+  <script>
+    setInterval(async () => {
+      try {
+        const res = await fetch('/config');
+        if (!res.ok) throw new Error(res.statusText);
+        const liveCfg = await res.json();
+        if (JSON.stringify(liveCfg) !== JSON.stringify(window.graphConfig)) {
+          window.updateGraph(liveCfg);
+          window.graphConfig = liveCfg;
+        }
+      } catch (err) {
+        console.error('Polling for config failed:', err);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

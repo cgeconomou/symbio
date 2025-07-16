@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    { "id": 1,  "name": "Alice",    "gender": "female", "inPrison": false },
+    { "id": 2,  "name": "Benjamin", "gender": "male",   "inPrison": true  },
+    { "id": 3,  "name": "Charlotte","gender": "female", "inPrison": false },
+    { "id": 4,  "name": "David",    "gender": "male",   "inPrison": false },
+    { "id": 5,  "name": "Ella",     "gender": "female", "inPrison": true  },
+    { "id": 6,  "name": "Frank",    "gender": "male",   "inPrison": true },
+    { "id": 7,  "name": "Grace",    "gender": "female", "inPrison": false },
+    { "id": 8,  "name": "Henry",    "gender": "male",   "inPrison": true  },
+    { "id": 9,  "name": "Isabella", "gender": "female", "inPrison": false },
+    { "id": 10, "name": "James",    "gender": "male",   "inPrison": false }
+  ],
+  "links": [
+    { "source": 1, "target": 2,  "interactionCount": 3, "related": true,  "birthplace": false },
+    { "source": 1, "target": 5,  "interactionCount": 1, "related": false, "birthplace": false },
+    { "source": 1, "target": 6,  "interactionCount": 4, "related": true,  "birthplace": false },
+    { "source": 2, "target": 3,  "interactionCount": 2, "related": false, "birthplace": true },
+    { "source": 2, "target": 7,  "interactionCount": 5, "related": true,  "birthplace": true },
+    { "source": 3, "target": 4,  "interactionCount": 1, "related": false, "birthplace": false },
+    { "source": 8, "target": 3,  "interactionCount": 3, "related": true,  "birthplace": true },
+    { "source": 4, "target": 5,  "interactionCount": 2, "related": false, "birthplace": false },
+    { "source": 4, "target": 9,  "interactionCount": 4, "related": true,  "birthplace": true },
+    { "source": 5, "target": 10, "interactionCount": 6, "related": false, "birthplace": false }
+  ]
+}
