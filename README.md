@@ -27,8 +27,8 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 
 2. **Clone** this repository  
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/cgeconomou/symbio.git
+   cd symbio
 
 3. **Install dependencies** 
    ```bash
@@ -51,11 +51,16 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 5. **🚀 Running the App** 
    ```bash
    node app.js
+   
+6. **🛑 Terminate the App**
+   While the app is running in the terminal, press:
+   ```bash
+   Ctrl + C
 
 6. **🔗 API Endpoints**  
    - `GET /`  
      📄 Renders the network view.  
-   - `GET /config`  
+   - `GET http://localhost:3000/config`  
      🔧 Retrieves the current graph configuration:  
      ```json
      {
@@ -69,7 +74,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
        "showGender": true
      }
      ```
-   - `POST /config`  
+   - `POST http://localhost:3000/config`  
      ✏️ Updates the configuration. Send JSON configuration in request body:  
      ```json
      {
