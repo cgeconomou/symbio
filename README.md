@@ -11,8 +11,6 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 - 🎨 **Dynamic styling**: color, shape, size controlled by config  
 - 🔄 **Toggle options**: gender, relation, birthplace, prison status  
 - 🤝 **Interactive**: drag‑and‑drop nodes, zoom/pan  
-- 📐 **Physics layout**: stabilization iterations for a neat graph  
-
 ---
 
 ## ⚙️ Prerequisites
@@ -52,7 +50,7 @@ This application visualizes a network graph using [vis.js](https://visjs.org/), 
 
 5. **🚀 Running the App** 
    ```bash
-   npm start
+   node app.js
 
 6. **🔗 API Endpoints**  
    - `GET /`  
